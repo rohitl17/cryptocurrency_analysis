@@ -130,7 +130,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_14816_5ba95c56c28647a09b12fa64cb69a0d8_\Engine_8164_e3b0d9ac19e54cbaa8db4f45b1526978_.yxdb</TempFile>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_11860_e2722c99dfe24f7d8aa4cbb46e8b22d6_\Engine_8164_f6c18ffd329d4291bf1101c846eb2f2a_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -860,7 +860,7 @@ minable = If [...</DefaultAnnotationText>
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="1889" y="245" width="429" height="176" />
+        <Position x="1889" y="245" width="430" height="177" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -882,7 +882,7 @@ minable = If [...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <File MaxRecords="" FileFormat="0">G:\My Drive\MS Admission\Washington\GitHub\DataScienceProjects\cryptocurrency-analysis\CryptoTableauData.csv</File>
+              <File MaxRecords="" FileFormat="0">G:\My Drive\MS Admission\Washington\GitHub\DataScienceProjects\cryptocurrency-analysis\CryptoYearlyData.csv</File>
               <Passwords />
               <FormatSpecificOptions>
                 <LineEndStyle>CRLF</LineEndStyle>
@@ -896,12 +896,9 @@ minable = If [...</DefaultAnnotationText>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText>CryptoTableauData.csv</DefaultAnnotationText>
+              <DefaultAnnotationText>CryptoYearlyData.csv</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
