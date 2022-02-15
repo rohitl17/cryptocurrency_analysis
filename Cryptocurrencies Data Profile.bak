@@ -130,7 +130,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_11860_e2722c99dfe24f7d8aa4cbb46e8b22d6_\Engine_8164_f6c18ffd329d4291bf1101c846eb2f2a_.yxdb</TempFile>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_6380_e2707973b36e442596b25e020efe50a5_\Engine_8164_e5bb27edeeb4414e9e03b88e4d9e1306_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -181,7 +181,6 @@ minable = If [...</DefaultAnnotationText>
           <OrderChanged value="False" />
           <CommaDecimal value="False" />
           <SelectFields>
-            <SelectField field="Marketcap Rank" selected="False" />
             <SelectField field="Yearly_Return_USD" selected="True" type="FixedDecimal" size="19.3" />
             <SelectField field="Max_trade_date" selected="False" />
             <SelectField field="Min_trade_date" selected="False" />
@@ -208,7 +207,7 @@ minable = If [...</DefaultAnnotationText>
           <CommaDecimal value="False" />
           <SelectFields>
             <SelectField field="market_cap_1day_change" selected="True" rename="market_cap_1day_change(%)" />
-            <SelectField field="USD_price_change_1_day" selected="True" rename="DailyReturns USD" />
+            <SelectField field="USD_price_change_1_day" selected="False" />
             <SelectField field="site_url" selected="False" />
             <SelectField field="github_url" selected="False" />
             <SelectField field="*Unknown" selected="True" />
@@ -257,6 +256,7 @@ minable = If [...</DefaultAnnotationText>
             <FormulaField expression="([Yesterday_Price]+[price_usd])/2" field="Day Mean Price" size="8" type="Double" />
             <FormulaField expression="[market_cap_1day_change]*100" field="market_cap_1day_change" size="12.7" type="FixedDecimal" />
             <FormulaField expression="[volume]/[Day Mean Price]" field="TradedVolume" size="8" type="Int64" />
+            <FormulaField expression="[USD_price_change_1_day]*100" field="DailyReturns(%)" size="19.3" type="FixedDecimal" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -860,7 +860,7 @@ minable = If [...</DefaultAnnotationText>
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="1889" y="245" width="430" height="177" />
+        <Position x="1889" y="245" width="417" height="176" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -878,11 +878,11 @@ minable = If [...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="52">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2190" y="306" />
+            <Position x="2178" y="306" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <File MaxRecords="" FileFormat="0">G:\My Drive\MS Admission\Washington\GitHub\DataScienceProjects\cryptocurrency-analysis\CryptoYearlyData.csv</File>
+              <File MaxRecords="" FileFormat="0">G:\My Drive\MS Admission\Washington\GitHub\DataScienceProjects\cryptocurrency-analysis\CryptoTableauData.csv</File>
               <Passwords />
               <FormatSpecificOptions>
                 <LineEndStyle>CRLF</LineEndStyle>
@@ -896,21 +896,25 @@ minable = If [...</DefaultAnnotationText>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText>CryptoYearlyData.csv</DefaultAnnotationText>
+              <DefaultAnnotationText>CryptoTableauData.csv</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
         <Node ToolID="53">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2106" y="306" />
+            <Position x="2094" y="306" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <OrderChanged value="False" />
               <CommaDecimal value="False" />
               <SelectFields>
+                <SelectField field="DailyReturns USD" selected="False" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>

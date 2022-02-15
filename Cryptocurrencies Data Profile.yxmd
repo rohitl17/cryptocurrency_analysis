@@ -130,7 +130,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_14816_5ba95c56c28647a09b12fa64cb69a0d8_\Engine_8164_e3b0d9ac19e54cbaa8db4f45b1526978_.yxdb</TempFile>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_10956_9fe0afa3077d49f0ba6d7b7c5d04c1de_\Engine_8164_44368db540b244a6bded7ca373b129f1_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -181,7 +181,6 @@ minable = If [...</DefaultAnnotationText>
           <OrderChanged value="False" />
           <CommaDecimal value="False" />
           <SelectFields>
-            <SelectField field="Marketcap Rank" selected="False" />
             <SelectField field="Yearly_Return_USD" selected="True" type="FixedDecimal" size="19.3" />
             <SelectField field="Max_trade_date" selected="False" />
             <SelectField field="Min_trade_date" selected="False" />
@@ -208,7 +207,7 @@ minable = If [...</DefaultAnnotationText>
           <CommaDecimal value="False" />
           <SelectFields>
             <SelectField field="market_cap_1day_change" selected="True" rename="market_cap_1day_change(%)" />
-            <SelectField field="USD_price_change_1_day" selected="True" rename="DailyReturns USD" />
+            <SelectField field="USD_price_change_1_day" selected="False" />
             <SelectField field="site_url" selected="False" />
             <SelectField field="github_url" selected="False" />
             <SelectField field="*Unknown" selected="True" />
@@ -257,6 +256,7 @@ minable = If [...</DefaultAnnotationText>
             <FormulaField expression="([Yesterday_Price]+[price_usd])/2" field="Day Mean Price" size="8" type="Double" />
             <FormulaField expression="[market_cap_1day_change]*100" field="market_cap_1day_change" size="12.7" type="FixedDecimal" />
             <FormulaField expression="[volume]/[Day Mean Price]" field="TradedVolume" size="8" type="Int64" />
+            <FormulaField expression="[USD_price_change_1_day]*100" field="DailyReturns(%)" size="19.3" type="FixedDecimal" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -466,6 +466,100 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2094" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="crypto_type" action="GroupBy" rename="crypto_type" />
+            <SummarizeField field="Yearly_Return(%)" action="Avg" rename="Avg_Yearly_Return(%)" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="2106" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="minable" action="GroupBy" rename="minable" />
+            <SummarizeField field="Yearly_Return(%)" action="Avg" rename="Avg_Yearly_Return(%)" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2190" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_10956_9fe0afa3077d49f0ba6d7b7c5d04c1de_\Engine_8164_3a0cc500684b4693abf978f6569e2939_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2202" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_10956_9fe0afa3077d49f0ba6d7b7c5d04c1de_\Engine_8164_ecb840fd64b045d7a5ea750c3ae83c76_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
@@ -860,7 +954,7 @@ minable = If [...</DefaultAnnotationText>
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="1889" y="245" width="429" height="176" />
+        <Position x="1889" y="245" width="417" height="284" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -878,7 +972,7 @@ minable = If [...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="52">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2190" y="306" />
+            <Position x="2178" y="306" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -907,13 +1001,14 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="53">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2106" y="306" />
+            <Position x="2094" y="306" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <OrderChanged value="False" />
               <CommaDecimal value="False" />
               <SelectFields>
+                <SelectField field="DailyReturns USD" selected="False" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
@@ -979,6 +1074,35 @@ minable = If [...</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
         </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="2178" y="414" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">G:\My Drive\MS Admission\Washington\GitHub\DataScienceProjects\cryptocurrency-analysis\CryptoTableauDataSummary.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CryptoTableauDataSummary.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
       </ChildNodes>
     </Node>
   </Nodes>
@@ -1022,6 +1146,18 @@ minable = If [...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="13" Connection="Output" />
       <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="14" Connection="Output" />
@@ -1090,6 +1226,14 @@ minable = If [...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="50" Connection="Output" />
       <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="51" Connection="Output" />
