@@ -126,7 +126,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1818" y="54" />
+        <Position x="1854" y="54" />
       </GuiSettings>
       <Properties>
         <Configuration>
