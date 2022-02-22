@@ -44,7 +44,7 @@
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_14660_e43502867c134c18aec78e2939d9b647_\Engine_18112_af31abf9e84a44a8ae8a0fc7c58da073_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_12116_0159b52167e74b3c943ba3bd85d326fd_\Engine_18112_20f7f23a644c4ae7982688fc47599afe_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -253,7 +253,7 @@
                 <Field field="trade_date" />
               </GroupFields>
               <HeaderField field="crypto_name" />
-              <DataField field="LogReturn" />
+              <DataField field="DailyLogReturn" />
               <Methods>
                 <Method method="Sum" />
               </Methods>
@@ -385,7 +385,7 @@
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_14660_e43502867c134c18aec78e2939d9b647_\Engine_18112_2043fce3e2e84045892a67adca112e99_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_12116_0159b52167e74b3c943ba3bd85d326fd_\Engine_18112_b3f6ba4909ea488ca9d0a4bd037f8928_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -599,7 +599,6 @@
               <OrderChanged value="False" />
               <CommaDecimal value="False" />
               <SelectFields>
-                <SelectField field="DailyReturns USD" selected="False" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
@@ -1036,12 +1035,13 @@
             <Configuration>
               <FormulaFields>
                 <FormulaField expression="[Yearly_Return_USD]*100/[price_usd]" field="Yearly_Return(%)" size="19.2" type="FixedDecimal" />
+                <FormulaField expression="LOG(([price_usd]+[Yearly_Return_USD])/[price_usd])" field="YearlyLogReturn" size="19.2" type="FixedDecimal" />
               </FormulaFields>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText><![CDATA[Yearly_Return(%) = [Yearly_Return_USD]*100/[price_usd]
-]]></DefaultAnnotationText>
+              <DefaultAnnotationText>Yearly_Return(%) = [Yearly_Return_USD]*100/[price_usd]
+YearlyLogReturn = LOG(([p...</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
@@ -1181,7 +1181,7 @@ Day Mean Price = (...</DefaultAnnotationText>
             <Configuration>
               <UpdateField value="False" />
               <UpdateField_Name>trade_date</UpdateField_Name>
-              <CreateField_Name>LogReturn</CreateField_Name>
+              <CreateField_Name>DailyLogReturn</CreateField_Name>
               <CreateField_Type>FixedDecimal</CreateField_Type>
               <CreateField_Size>20.4</CreateField_Size>
               <OtherRows>Empty</OtherRows>
