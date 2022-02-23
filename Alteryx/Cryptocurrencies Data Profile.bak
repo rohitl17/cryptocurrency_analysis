@@ -33,7 +33,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_17448_7002611ebb6346899d6cd0d8a5ec27b7_\Engine_14848_0149c8945aba425f83f359066fd9c31f_.yxdb</TempFile>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_20020_eb45fef88688447eaa6786a1c2ea87a5_\Engine_14848_cba85ba8de8544dfb437d350ca645bc9_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -54,6 +54,117 @@
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="109">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2669" y="629" width="492" height="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Day of the Week Analysis</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="105">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="2694" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeFormat([trade_date],'%A')" field="TradeDateDay" size="32" type="String" />
+                <FormulaField expression="If [TradeDateDay]=='Monday' then [TradeDateDay] else 'Other' endif" field="TradeDayGroup" size="32" type="String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>TradeDateDay = DateTimeFormat([trade_date],'%A')
+TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="106">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="2814" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="trade_date" action="GroupBy" rename="trade_date" />
+                <SummarizeField field="TradeDateDay" action="GroupBy" rename="TradeDateDay" />
+                <SummarizeField field="TradeDayGroup" action="GroupBy" rename="TradeDayGroup" />
+                <SummarizeField field="DailyReturns(%)" action="Avg" rename="Avg_DailyReturns(%)" />
+                <SummarizeField field="DailyLogReturn" action="Avg" rename="Avg_DailyLogReturn" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="107">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2922" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="108">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="3030" y="678" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">G:\My Drive\MS Admission\Washington\GitHub\DataScienceProjects\cryptocurrency-analysis\CryptoMondayAnalysisData.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CryptoMondayAnalysisData.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
     </Node>
     <Node ToolID="83">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
@@ -98,7 +209,7 @@
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_17448_7002611ebb6346899d6cd0d8a5ec27b7_\Engine_14848_0a3436bb22394eec8ea89e44e3ed70a7_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_20020_eb45fef88688447eaa6786a1c2ea87a5_\Engine_14848_f1a4e5e8612c48a3a6e3cdd856f7bfed_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -307,7 +418,7 @@
                 <Field field="trade_date" />
               </GroupFields>
               <HeaderField field="crypto_name" />
-              <DataField field="DailyReturns(%)" />
+              <DataField field="DailyLogReturn" />
               <Methods>
                 <Method method="Sum" />
               </Methods>
@@ -493,33 +604,13 @@
             <Configuration>
               <RenameMode>Add</RenameMode>
               <Fields orderChanged="False">
-                <Field name="Binance_Coin" />
-                <Field name="Bitcoin" />
-                <Field name="Bitcoin_Cash" />
-                <Field name="Bitcoin_SV" />
-                <Field name="Cardano" />
-                <Field name="Chainlink" />
-                <Field name="Crypto_com_Coin" />
-                <Field name="EOS" />
-                <Field name="Ethereum" />
-                <Field name="Huobi_Token" />
-                <Field name="Litecoin" />
-                <Field name="Monero" />
-                <Field name="NEO" />
-                <Field name="Stellar" />
-                <Field name="Tether" />
-                <Field name="Tezos" />
-                <Field name="TRON" />
-                <Field name="UNUS_SED_LEO" />
-                <Field name="USD_Coin" />
-                <Field name="XRP" />
                 <Field name="*Unknown" />
                 <Field name="trade_date" selected="False" />
               </Fields>
               <Expression />
               <AddPrefixSuffix>
                 <Type>Suffix</Type>
-                <Text><![CDATA[ Return]]></Text>
+                <Text><![CDATA[ LogReturn]]></Text>
               </AddPrefixSuffix>
             </Configuration>
             <Annotation DisplayMode="0">
@@ -530,26 +621,26 @@
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="trade_date" source="CrossTab:Group:Sum:" type="Date" />
-                <Field name="Binance_Coin Return" source="CrossTab:Header:crypto_name:Binance Coin:Sum:" type="Double" />
-                <Field name="Bitcoin Return" source="CrossTab:Header:crypto_name:Bitcoin:Sum:" type="Double" />
-                <Field name="Bitcoin_Cash Return" source="CrossTab:Header:crypto_name:Bitcoin Cash:Sum:" type="Double" />
-                <Field name="Bitcoin_SV Return" source="CrossTab:Header:crypto_name:Bitcoin SV:Sum:" type="Double" />
-                <Field name="Cardano Return" source="CrossTab:Header:crypto_name:Cardano:Sum:" type="Double" />
-                <Field name="Chainlink Return" source="CrossTab:Header:crypto_name:Chainlink:Sum:" type="Double" />
-                <Field name="Crypto_com_Coin Return" source="CrossTab:Header:crypto_name:Crypto.com Coin:Sum:" type="Double" />
-                <Field name="EOS Return" source="CrossTab:Header:crypto_name:EOS:Sum:" type="Double" />
-                <Field name="Ethereum Return" source="CrossTab:Header:crypto_name:Ethereum:Sum:" type="Double" />
-                <Field name="Huobi_Token Return" source="CrossTab:Header:crypto_name:Huobi Token:Sum:" type="Double" />
-                <Field name="Litecoin Return" source="CrossTab:Header:crypto_name:Litecoin:Sum:" type="Double" />
-                <Field name="Monero Return" source="CrossTab:Header:crypto_name:Monero:Sum:" type="Double" />
-                <Field name="NEO Return" source="CrossTab:Header:crypto_name:NEO:Sum:" type="Double" />
-                <Field name="Stellar Return" source="CrossTab:Header:crypto_name:Stellar:Sum:" type="Double" />
-                <Field name="Tether Return" source="CrossTab:Header:crypto_name:Tether:Sum:" type="Double" />
-                <Field name="Tezos Return" source="CrossTab:Header:crypto_name:Tezos:Sum:" type="Double" />
-                <Field name="TRON Return" source="CrossTab:Header:crypto_name:TRON:Sum:" type="Double" />
-                <Field name="UNUS_SED_LEO Return" source="CrossTab:Header:crypto_name:UNUS SED LEO:Sum:" type="Double" />
-                <Field name="USD_Coin Return" source="CrossTab:Header:crypto_name:USD Coin:Sum:" type="Double" />
-                <Field name="XRP Return" source="CrossTab:Header:crypto_name:XRP:Sum:" type="Double" />
+                <Field name="Binance_Coin LogReturn" source="CrossTab:Header:crypto_name:Binance Coin:Sum:" type="Double" />
+                <Field name="Bitcoin LogReturn" source="CrossTab:Header:crypto_name:Bitcoin:Sum:" type="Double" />
+                <Field name="Bitcoin_Cash LogReturn" source="CrossTab:Header:crypto_name:Bitcoin Cash:Sum:" type="Double" />
+                <Field name="Bitcoin_SV LogReturn" source="CrossTab:Header:crypto_name:Bitcoin SV:Sum:" type="Double" />
+                <Field name="Cardano LogReturn" source="CrossTab:Header:crypto_name:Cardano:Sum:" type="Double" />
+                <Field name="Chainlink LogReturn" source="CrossTab:Header:crypto_name:Chainlink:Sum:" type="Double" />
+                <Field name="Crypto_com_Coin LogReturn" source="CrossTab:Header:crypto_name:Crypto.com Coin:Sum:" type="Double" />
+                <Field name="EOS LogReturn" source="CrossTab:Header:crypto_name:EOS:Sum:" type="Double" />
+                <Field name="Ethereum LogReturn" source="CrossTab:Header:crypto_name:Ethereum:Sum:" type="Double" />
+                <Field name="Huobi_Token LogReturn" source="CrossTab:Header:crypto_name:Huobi Token:Sum:" type="Double" />
+                <Field name="Litecoin LogReturn" source="CrossTab:Header:crypto_name:Litecoin:Sum:" type="Double" />
+                <Field name="Monero LogReturn" source="CrossTab:Header:crypto_name:Monero:Sum:" type="Double" />
+                <Field name="NEO LogReturn" source="CrossTab:Header:crypto_name:NEO:Sum:" type="Double" />
+                <Field name="Stellar LogReturn" source="CrossTab:Header:crypto_name:Stellar:Sum:" type="Double" />
+                <Field name="Tether LogReturn" source="CrossTab:Header:crypto_name:Tether:Sum:" type="Double" />
+                <Field name="Tezos LogReturn" source="CrossTab:Header:crypto_name:Tezos:Sum:" type="Double" />
+                <Field name="TRON LogReturn" source="CrossTab:Header:crypto_name:TRON:Sum:" type="Double" />
+                <Field name="UNUS_SED_LEO LogReturn" source="CrossTab:Header:crypto_name:UNUS SED LEO:Sum:" type="Double" />
+                <Field name="USD_Coin LogReturn" source="CrossTab:Header:crypto_name:USD Coin:Sum:" type="Double" />
+                <Field name="XRP LogReturn" source="CrossTab:Header:crypto_name:XRP:Sum:" type="Double" />
               </RecordInfo>
               <SortInfo>
                 <Field field="trade_date" order="Asc" />
@@ -613,7 +704,7 @@
               <Expression />
               <AddPrefixSuffix>
                 <Type>Suffix</Type>
-                <Text><![CDATA[ Vol]]></Text>
+                <Text><![CDATA[ Volume]]></Text>
               </AddPrefixSuffix>
             </Configuration>
             <Annotation DisplayMode="0">
@@ -624,26 +715,26 @@
             <MetaInfo connection="Output">
               <RecordInfo>
                 <Field name="trade_date" source="CrossTab:Group:Sum:" type="Date" />
-                <Field name="Binance_Coin Vol" source="CrossTab:Header:crypto_name:Binance Coin:Sum:" type="Int64" />
-                <Field name="Bitcoin Vol" source="CrossTab:Header:crypto_name:Bitcoin:Sum:" type="Int64" />
-                <Field name="Bitcoin_Cash Vol" source="CrossTab:Header:crypto_name:Bitcoin Cash:Sum:" type="Int64" />
-                <Field name="Bitcoin_SV Vol" source="CrossTab:Header:crypto_name:Bitcoin SV:Sum:" type="Int64" />
-                <Field name="Cardano Vol" source="CrossTab:Header:crypto_name:Cardano:Sum:" type="Int64" />
-                <Field name="Chainlink Vol" source="CrossTab:Header:crypto_name:Chainlink:Sum:" type="Int64" />
-                <Field name="Crypto_com_Coin Vol" source="CrossTab:Header:crypto_name:Crypto.com Coin:Sum:" type="Int64" />
-                <Field name="EOS Vol" source="CrossTab:Header:crypto_name:EOS:Sum:" type="Int64" />
-                <Field name="Ethereum Vol" source="CrossTab:Header:crypto_name:Ethereum:Sum:" type="Int64" />
-                <Field name="Huobi_Token Vol" source="CrossTab:Header:crypto_name:Huobi Token:Sum:" type="Int64" />
-                <Field name="Litecoin Vol" source="CrossTab:Header:crypto_name:Litecoin:Sum:" type="Int64" />
-                <Field name="Monero Vol" source="CrossTab:Header:crypto_name:Monero:Sum:" type="Int64" />
-                <Field name="NEO Vol" source="CrossTab:Header:crypto_name:NEO:Sum:" type="Int64" />
-                <Field name="Stellar Vol" source="CrossTab:Header:crypto_name:Stellar:Sum:" type="Int64" />
-                <Field name="Tether Vol" source="CrossTab:Header:crypto_name:Tether:Sum:" type="Int64" />
-                <Field name="Tezos Vol" source="CrossTab:Header:crypto_name:Tezos:Sum:" type="Int64" />
-                <Field name="TRON Vol" source="CrossTab:Header:crypto_name:TRON:Sum:" type="Int64" />
-                <Field name="UNUS_SED_LEO Vol" source="CrossTab:Header:crypto_name:UNUS SED LEO:Sum:" type="Int64" />
-                <Field name="USD_Coin Vol" source="CrossTab:Header:crypto_name:USD Coin:Sum:" type="Int64" />
-                <Field name="XRP Vol" source="CrossTab:Header:crypto_name:XRP:Sum:" type="Int64" />
+                <Field name="Binance_Coin Volume" source="CrossTab:Header:crypto_name:Binance Coin:Sum:" type="Int64" />
+                <Field name="Bitcoin Volume" source="CrossTab:Header:crypto_name:Bitcoin:Sum:" type="Int64" />
+                <Field name="Bitcoin_Cash Volume" source="CrossTab:Header:crypto_name:Bitcoin Cash:Sum:" type="Int64" />
+                <Field name="Bitcoin_SV Volume" source="CrossTab:Header:crypto_name:Bitcoin SV:Sum:" type="Int64" />
+                <Field name="Cardano Volume" source="CrossTab:Header:crypto_name:Cardano:Sum:" type="Int64" />
+                <Field name="Chainlink Volume" source="CrossTab:Header:crypto_name:Chainlink:Sum:" type="Int64" />
+                <Field name="Crypto_com_Coin Volume" source="CrossTab:Header:crypto_name:Crypto.com Coin:Sum:" type="Int64" />
+                <Field name="EOS Volume" source="CrossTab:Header:crypto_name:EOS:Sum:" type="Int64" />
+                <Field name="Ethereum Volume" source="CrossTab:Header:crypto_name:Ethereum:Sum:" type="Int64" />
+                <Field name="Huobi_Token Volume" source="CrossTab:Header:crypto_name:Huobi Token:Sum:" type="Int64" />
+                <Field name="Litecoin Volume" source="CrossTab:Header:crypto_name:Litecoin:Sum:" type="Int64" />
+                <Field name="Monero Volume" source="CrossTab:Header:crypto_name:Monero:Sum:" type="Int64" />
+                <Field name="NEO Volume" source="CrossTab:Header:crypto_name:NEO:Sum:" type="Int64" />
+                <Field name="Stellar Volume" source="CrossTab:Header:crypto_name:Stellar:Sum:" type="Int64" />
+                <Field name="Tether Volume" source="CrossTab:Header:crypto_name:Tether:Sum:" type="Int64" />
+                <Field name="Tezos Volume" source="CrossTab:Header:crypto_name:Tezos:Sum:" type="Int64" />
+                <Field name="TRON Volume" source="CrossTab:Header:crypto_name:TRON:Sum:" type="Int64" />
+                <Field name="UNUS_SED_LEO Volume" source="CrossTab:Header:crypto_name:UNUS SED LEO:Sum:" type="Int64" />
+                <Field name="USD_Coin Volume" source="CrossTab:Header:crypto_name:USD Coin:Sum:" type="Int64" />
+                <Field name="XRP Volume" source="CrossTab:Header:crypto_name:XRP:Sum:" type="Int64" />
               </RecordInfo>
               <SortInfo>
                 <Field field="trade_date" order="Asc" />
@@ -723,7 +814,7 @@
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_17448_7002611ebb6346899d6cd0d8a5ec27b7_\Engine_14848_08cd05e7dc8b4cb7b31953b12e0cca42_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_20020_eb45fef88688447eaa6786a1c2ea87a5_\Engine_14848_0f31540c70b84c0f9c84e0e7325eba10_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1059,6 +1150,7 @@
               <SelectFields>
                 <SelectField field="trade_date" selected="True" />
                 <SelectField field="crypto_name" selected="True" />
+                <SelectField field="DailyLogReturn" selected="True" />
                 <SelectField field="TradedVolume" selected="True" />
                 <SelectField field="DailyReturns(%)" selected="True" />
                 <SelectField field="*Unknown" selected="False" />
@@ -1499,7 +1591,7 @@ YearlyLogReturn = LOG(([p...</DefaultAnnotationText>
     </Node>
     <Node ToolID="85">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="270" y="77" width="188" height="165" />
+        <Position x="270" y="77" width="188" height="240" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1521,12 +1613,12 @@ YearlyLogReturn = LOG(([p...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Expression>[crypto_name]!=Null()</Expression>
+              <Expression>[trade_date]&gt;='2019-11-01' and [trade_date]&lt;='2020-11-03' and [crypto_name]!=Null()</Expression>
               <Mode>Custom</Mode>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText>[crypto_name]!=Null()</DefaultAnnotationText>
+              <DefaultAnnotationText>[trade_date]&gt;='2019-11-01' and [trade_date]&lt;='2020-11-03' and [crypto_name]!=Nul...</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
@@ -2142,6 +2234,18 @@ minable = If [...</DefaultAnnotationText>
       <Destination ToolID="104" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="105" Connection="Output" />
+      <Destination ToolID="106" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="106" Connection="Output" />
+      <Destination ToolID="107" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="59" Connection="Output" />
       <Destination ToolID="61" Connection="Input" />
     </Connection>
@@ -2212,6 +2316,10 @@ minable = If [...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="53" Connection="Output" />
       <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="105" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="55" Connection="Output" />
@@ -2354,6 +2462,10 @@ minable = If [...</DefaultAnnotationText>
       <Destination ToolID="14" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="79" Connection="True" />
+      <Destination ToolID="99" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="14" Connection="Output" />
       <Destination ToolID="6" Connection="Input" />
     </Connection>
@@ -2368,10 +2480,6 @@ minable = If [...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="95" Connection="Output" />
       <Destination ToolID="79" Connection="Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="95" Connection="Output" />
-      <Destination ToolID="99" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
