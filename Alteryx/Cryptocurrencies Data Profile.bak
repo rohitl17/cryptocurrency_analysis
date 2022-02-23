@@ -33,7 +33,54 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_7380_36dc1fa89f6b4f438cc8327fd07b2d29_\Engine_14848_c2d966a44ad34b94845cf3f74f8d0642_.yxdb</TempFile>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_16092_8b55bcc647fd42638b7730aafd8f776d_\Engine_14848_279fc387e4f140299dd05555444d1ab6_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="113">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="3390" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="TradeDayGroup" action="GroupBy" rename="TradeDayGroup" />
+            <SummarizeField field="Avg_DailyLogReturn" action="Variance" rename="Variance_Avg_DailyLogReturn" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="114">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="3486" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_16092_8b55bcc647fd42638b7730aafd8f776d_\Engine_14848_1a9e06b7a14c4efb9b9281ef3da8391e_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -325,7 +372,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_7380_36dc1fa89f6b4f438cc8327fd07b2d29_\Engine_14848_3684c7d2d53e4c9a8f172930dca40874_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_16092_8b55bcc647fd42638b7730aafd8f776d_\Engine_14848_e5a5f538820441cb975d6fe20d651315_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -930,7 +977,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_7380_36dc1fa89f6b4f438cc8327fd07b2d29_\Engine_14848_74711d50ac7a4daca75c58462b706ec3_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_16092_8b55bcc647fd42638b7730aafd8f776d_\Engine_14848_b7cb9bc555ad410f838ee7b2cec46baa_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -2350,6 +2397,10 @@ minable = If [...</DefaultAnnotationText>
       <Destination ToolID="104" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="113" Connection="Output" />
+      <Destination ToolID="114" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="105" Connection="Output" />
       <Destination ToolID="106" Connection="Input" />
     </Connection>
@@ -2364,6 +2415,10 @@ minable = If [...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="111" Connection="Output" />
       <Destination ToolID="112" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="106" Connection="Output" />
+      <Destination ToolID="113" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="107" Connection="Output" />

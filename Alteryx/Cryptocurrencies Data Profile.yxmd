@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="103">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1446" y="462" />
+        <Position x="1446" y="464" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -29,11 +29,11 @@
     </Node>
     <Node ToolID="104">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1542" y="462" />
+        <Position x="1542" y="464" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_16092_8b55bcc647fd42638b7730aafd8f776d_\Engine_14848_279fc387e4f140299dd05555444d1ab6_.yxdb</TempFile>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_19200_5258f4a1003b4c099430f6f51e4745d6_\Engine_15248_3dfbdb4855324924b3d308d2cad7136a_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -57,7 +57,7 @@
     </Node>
     <Node ToolID="113">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="3390" y="534" />
+        <Position x="3390" y="536" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -76,11 +76,11 @@
     </Node>
     <Node ToolID="114">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="3486" y="534" />
+        <Position x="3486" y="536" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_16092_8b55bcc647fd42638b7730aafd8f776d_\Engine_14848_1a9e06b7a14c4efb9b9281ef3da8391e_.yxdb</TempFile>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_19200_5258f4a1003b4c099430f6f51e4745d6_\Engine_15248_5e53430122ab425f9b09e3ffa8a1ab5f_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -104,7 +104,7 @@
     </Node>
     <Node ToolID="109">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2669" y="629" width="672" height="229" />
+        <Position x="2669" y="631" width="672" height="229" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -122,7 +122,7 @@
       <ChildNodes>
         <Node ToolID="105">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="2694" y="678" />
+            <Position x="2694" y="680" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -142,7 +142,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="106">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="2814" y="678" />
+            <Position x="2814" y="680" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -164,7 +164,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="107">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="3102" y="690" />
+            <Position x="3102" y="692" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -184,7 +184,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="108">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="3210" y="690" />
+            <Position x="3210" y="692" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -205,15 +205,12 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
               <DefaultAnnotationText>CryptoMondayAnalysisData.csv</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
-            <Dependencies>
-              <Implicit />
-            </Dependencies>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
         <Node ToolID="110">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="2814" y="774" />
+            <Position x="2814" y="776" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -235,7 +232,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="111">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="2922" y="774" />
+            <Position x="2922" y="776" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -292,7 +289,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="112">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="3006" y="690" />
+            <Position x="3006" y="692" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -331,7 +328,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
     </Node>
     <Node ToolID="83">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2417" y="89" width="235" height="133" />
+        <Position x="2417" y="91" width="235" height="133" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -349,7 +346,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="59">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="2442" y="138" />
+            <Position x="2442" y="140" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -368,11 +365,11 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="61">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="2538" y="138" />
+            <Position x="2538" y="140" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_16092_8b55bcc647fd42638b7730aafd8f776d_\Engine_14848_e5a5f538820441cb975d6fe20d651315_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_19200_5258f4a1003b4c099430f6f51e4745d6_\Engine_15248_77a7410524c14a9c9be9cfb71f1106e7_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -398,7 +395,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
     </Node>
     <Node ToolID="72">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2669" y="269" width="456" height="165" />
+        <Position x="2669" y="271" width="456" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -416,7 +413,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="68">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2694" y="318" />
+            <Position x="2694" y="320" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -436,7 +433,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="69">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="2790" y="318" />
+            <Position x="2790" y="320" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -487,7 +484,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="70">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2886" y="318" />
+            <Position x="2886" y="320" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -507,7 +504,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="71">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2994" y="318" />
+            <Position x="2994" y="320" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -535,7 +532,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
     </Node>
     <Node ToolID="78">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2669" y="449" width="453" height="165" />
+        <Position x="2669" y="451" width="453" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -553,7 +550,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="74">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2694" y="498" />
+            <Position x="2694" y="500" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -573,7 +570,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="75">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="2790" y="498" />
+            <Position x="2790" y="500" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -624,7 +621,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="76">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2886" y="498" />
+            <Position x="2886" y="500" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -644,7 +641,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="77">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2994" y="498" />
+            <Position x="2994" y="500" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -672,7 +669,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
     </Node>
     <Node ToolID="93">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="3173" y="172" width="457" height="205" />
+        <Position x="3173" y="174" width="457" height="295" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -690,7 +687,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="88">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="3306" y="222" />
+            <Position x="3306" y="224" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -761,12 +758,32 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="89">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-            <Position x="3210" y="294" />
+            <Position x="3210" y="296" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <RenameMode>Add</RenameMode>
               <Fields orderChanged="False">
+                <Field name="Binance_Coin" />
+                <Field name="Bitcoin" />
+                <Field name="Bitcoin_Cash" />
+                <Field name="Bitcoin_SV" />
+                <Field name="Cardano" />
+                <Field name="Chainlink" />
+                <Field name="Crypto_com_Coin" />
+                <Field name="EOS" />
+                <Field name="Ethereum" />
+                <Field name="Huobi_Token" />
+                <Field name="Litecoin" />
+                <Field name="Monero" />
+                <Field name="NEO" />
+                <Field name="Stellar" />
+                <Field name="Tether" />
+                <Field name="Tezos" />
+                <Field name="TRON" />
+                <Field name="UNUS_SED_LEO" />
+                <Field name="USD_Coin" />
+                <Field name="XRP" />
                 <Field name="*Unknown" />
                 <Field name="trade_date" selected="False" />
               </Fields>
@@ -814,7 +831,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="90">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="3390" y="222" />
+            <Position x="3390" y="224" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -835,7 +852,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="91">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-            <Position x="3198" y="221" />
+            <Position x="3198" y="223" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -908,7 +925,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="92">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="3498" y="222" />
+            <Position x="3498" y="224" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -932,11 +949,60 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
         </Node>
+        <Node ToolID="116">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="3402" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="117">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="3498" y="354" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">G:\My Drive\MS Admission\Washington\GitHub\DataScienceProjects\cryptocurrency-analysis\CryptoCorrelationTableauData.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CryptoCorrelationTableauData.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <Dependencies>
+              <Implicit />
+            </Dependencies>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="82">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2189" y="89" width="221" height="133" />
+        <Position x="2189" y="91" width="221" height="133" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -954,7 +1020,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="58">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="2214" y="138" />
+            <Position x="2214" y="140" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -973,11 +1039,11 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="60">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="2310" y="138" />
+            <Position x="2310" y="140" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_16092_8b55bcc647fd42638b7730aafd8f776d_\Engine_14848_b7cb9bc555ad410f838ee7b2cec46baa_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_19200_5258f4a1003b4c099430f6f51e4745d6_\Engine_15248_0ac1fd7121a74c9fb5bec9c6cbe0f4a7_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -1003,7 +1069,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
     </Node>
     <Node ToolID="67">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2669" y="89" width="457" height="165" />
+        <Position x="2669" y="91" width="457" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1021,7 +1087,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="63">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2694" y="138" />
+            <Position x="2694" y="140" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1041,7 +1107,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="64">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="2790" y="138" />
+            <Position x="2790" y="140" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1092,7 +1158,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="65">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2886" y="138" />
+            <Position x="2886" y="140" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1112,7 +1178,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="66">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2994" y="138" />
+            <Position x="2994" y="140" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1140,7 +1206,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2189" y="233" width="441" height="444" />
+        <Position x="2189" y="235" width="441" height="445" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1158,7 +1224,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="52">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2502" y="294" />
+            <Position x="2502" y="296" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1184,7 +1250,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="53">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2406" y="294" />
+            <Position x="2406" y="296" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1204,7 +1270,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="55">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2214" y="282" />
+            <Position x="2214" y="284" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1227,7 +1293,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="56">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="2310" y="294" />
+            <Position x="2310" y="296" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -1258,7 +1324,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="57">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2502" y="414" />
+            <Position x="2502" y="416" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1284,7 +1350,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="87">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2406" y="414" />
+            <Position x="2406" y="416" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1304,7 +1370,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="99">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2214" y="594" />
+            <Position x="2214" y="596" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1329,7 +1395,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="100">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2214" y="522" />
+            <Position x="2214" y="524" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1358,7 +1424,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="101">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="2310" y="534" />
+            <Position x="2310" y="536" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -1389,7 +1455,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="102">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2394" y="534" />
+            <Position x="2394" y="536" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1417,7 +1483,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="1865" y="413" width="248" height="165" />
+        <Position x="1865" y="415" width="248" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1435,7 +1501,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="20">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="1986" y="462" />
+            <Position x="1986" y="464" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1461,7 +1527,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="51">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1890" y="462" />
+            <Position x="1890" y="464" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1483,7 +1549,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
     </Node>
     <Node ToolID="86">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="1205" y="52" width="973" height="345" />
+        <Position x="1205" y="54" width="973" height="346" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1501,7 +1567,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="6">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="1230" y="101" />
+            <Position x="1230" y="103" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1527,7 +1593,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="13">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2094" y="102" />
+            <Position x="2094" y="104" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1552,7 +1618,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="35">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1422" y="101" />
+            <Position x="1422" y="103" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1569,7 +1635,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="41">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1230" y="282" />
+            <Position x="1230" y="284" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1586,7 +1652,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="42">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1326" y="269" />
+            <Position x="1326" y="271" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1608,7 +1674,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="43">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="1518" y="102" />
+            <Position x="1518" y="104" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -1639,7 +1705,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="45">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1998" y="102" />
+            <Position x="1998" y="104" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1657,7 +1723,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="46">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1326" y="102" />
+            <Position x="1326" y="104" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1676,7 +1742,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="47">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1710" y="102" />
+            <Position x="1710" y="104" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1694,7 +1760,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="48">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-            <Position x="1902" y="101" />
+            <Position x="1902" y="103" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1712,7 +1778,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="49">
           <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-            <Position x="1806" y="102" />
+            <Position x="1806" y="104" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1732,7 +1798,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="50">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1614" y="102" />
+            <Position x="1614" y="104" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1754,7 +1820,7 @@ YearlyLogReturn = LOG(([p...</DefaultAnnotationText>
     </Node>
     <Node ToolID="85">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="270" y="77" width="188" height="240" />
+        <Position x="270" y="79" width="188" height="240" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1772,7 +1838,7 @@ YearlyLogReturn = LOG(([p...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="295" y="126" />
+            <Position x="295" y="128" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1791,7 +1857,7 @@ YearlyLogReturn = LOG(([p...</DefaultAnnotationText>
     </Node>
     <Node ToolID="84">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="473" y="53" width="721" height="252" />
+        <Position x="473" y="55" width="721" height="252" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1809,7 +1875,7 @@ YearlyLogReturn = LOG(([p...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="9">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="498" y="113" />
+            <Position x="498" y="115" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1829,7 +1895,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="29">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="607" y="114" />
+            <Position x="607" y="116" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1855,7 +1921,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="30">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="822" y="114" />
+            <Position x="822" y="116" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1878,7 +1944,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="73">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="715" y="114" />
+            <Position x="715" y="116" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1904,7 +1970,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="79">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1014" y="114" />
+            <Position x="1014" y="116" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1921,7 +1987,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1110" y="102" />
+            <Position x="1110" y="104" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1945,7 +2011,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="95">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="918" y="114" />
+            <Position x="918" y="116" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1973,7 +2039,7 @@ Day Mean Price = (...</DefaultAnnotationText>
     </Node>
     <Node ToolID="81">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="54" y="77" width="205" height="165" />
+        <Position x="54" y="79" width="205" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1991,7 +2057,7 @@ Day Mean Price = (...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="1">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="79" y="126" />
+            <Position x="79" y="128" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2041,7 +2107,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="2">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="175" y="126" />
+            <Position x="175" y="128" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2073,7 +2139,7 @@ Day Mean Price = (...</DefaultAnnotationText>
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="403" y="440" width="157" height="24" />
+        <Position x="403" y="442" width="157" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2091,7 +2157,7 @@ Day Mean Price = (...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="11">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="547" y="584" />
+            <Position x="547" y="586" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2122,7 +2188,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="12">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="655" y="572" />
+            <Position x="655" y="574" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2143,7 +2209,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="15">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1231" y="512" />
+            <Position x="1231" y="514" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2161,7 +2227,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="16">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1566" y="510" />
+            <Position x="1566" y="512" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2189,7 +2255,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="17">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-            <Position x="1327" y="512" />
+            <Position x="1327" y="514" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2207,7 +2273,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="18">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1423" y="512" />
+            <Position x="1423" y="514" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2227,7 +2293,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="21">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="427" y="500" />
+            <Position x="427" y="502" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2245,7 +2311,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="22">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="751" y="488" />
+            <Position x="751" y="490" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2266,7 +2332,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="23">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="943" y="488" />
+            <Position x="943" y="490" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2285,7 +2351,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="24">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1039" y="632" />
+            <Position x="1039" y="634" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2304,7 +2370,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="25">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="1135" y="632" />
+            <Position x="1135" y="634" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2323,7 +2389,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="26">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1231" y="632" />
+            <Position x="1231" y="634" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2349,7 +2415,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="27">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="847" y="500" />
+            <Position x="847" y="502" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -2441,6 +2507,10 @@ minable = If [...</DefaultAnnotationText>
       <Destination ToolID="69" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="116" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="69" Connection="Output" />
       <Destination ToolID="70" Connection="Input" />
     </Connection>
@@ -2483,6 +2553,10 @@ minable = If [...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="90" Connection="Output" />
       <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="117" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="58" Connection="Output" />
