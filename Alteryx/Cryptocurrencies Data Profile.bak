@@ -33,7 +33,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_20020_eb45fef88688447eaa6786a1c2ea87a5_\Engine_14848_cba85ba8de8544dfb437d350ca645bc9_.yxdb</TempFile>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_7380_36dc1fa89f6b4f438cc8327fd07b2d29_\Engine_14848_c2d966a44ad34b94845cf3f74f8d0642_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -57,7 +57,7 @@
     </Node>
     <Node ToolID="109">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2669" y="629" width="492" height="225" />
+        <Position x="2669" y="629" width="672" height="229" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -117,7 +117,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="107">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2922" y="678" />
+            <Position x="3102" y="690" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -137,7 +137,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
         </Node>
         <Node ToolID="108">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="3030" y="678" />
+            <Position x="3210" y="690" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -163,6 +163,122 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
             </Dependencies>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="110">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="2814" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="trade_date" action="GroupBy" rename="trade_date" />
+                <SummarizeField field="TradeDateDay" action="GroupBy" rename="TradeDateDay" />
+                <SummarizeField field="TradeDayGroup" action="GroupBy" rename="TradeDayGroup" />
+                <SummarizeField field="crypto_name" action="GroupBy" rename="crypto_name" />
+                <SummarizeField field="DailyLogReturn" action="Avg" rename="DailyLogReturn" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="111">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="2922" y="774" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="trade_date" />
+                <Field field="TradeDateDay" />
+                <Field field="TradeDayGroup" />
+              </GroupFields>
+              <HeaderField field="crypto_name" />
+              <DataField field="DailyLogReturn" />
+              <Methods>
+                <Method method="Sum" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="trade_date" source="CrossTab:Group:Sum:" type="Date" />
+                <Field name="TradeDateDay" size="32" source="CrossTab:Group:Sum:" type="String" />
+                <Field name="TradeDayGroup" size="32" source="CrossTab:Group:Sum:" type="String" />
+                <Field name="Binance_Coin" source="CrossTab:Header:crypto_name:Binance Coin:Sum:" type="Double" />
+                <Field name="Bitcoin" source="CrossTab:Header:crypto_name:Bitcoin:Sum:" type="Double" />
+                <Field name="Bitcoin_Cash" source="CrossTab:Header:crypto_name:Bitcoin Cash:Sum:" type="Double" />
+                <Field name="Bitcoin_SV" source="CrossTab:Header:crypto_name:Bitcoin SV:Sum:" type="Double" />
+                <Field name="Cardano" source="CrossTab:Header:crypto_name:Cardano:Sum:" type="Double" />
+                <Field name="Chainlink" source="CrossTab:Header:crypto_name:Chainlink:Sum:" type="Double" />
+                <Field name="Crypto_com_Coin" source="CrossTab:Header:crypto_name:Crypto.com Coin:Sum:" type="Double" />
+                <Field name="EOS" source="CrossTab:Header:crypto_name:EOS:Sum:" type="Double" />
+                <Field name="Ethereum" source="CrossTab:Header:crypto_name:Ethereum:Sum:" type="Double" />
+                <Field name="Huobi_Token" source="CrossTab:Header:crypto_name:Huobi Token:Sum:" type="Double" />
+                <Field name="Litecoin" source="CrossTab:Header:crypto_name:Litecoin:Sum:" type="Double" />
+                <Field name="Monero" source="CrossTab:Header:crypto_name:Monero:Sum:" type="Double" />
+                <Field name="NEO" source="CrossTab:Header:crypto_name:NEO:Sum:" type="Double" />
+                <Field name="Stellar" source="CrossTab:Header:crypto_name:Stellar:Sum:" type="Double" />
+                <Field name="Tether" source="CrossTab:Header:crypto_name:Tether:Sum:" type="Double" />
+                <Field name="Tezos" source="CrossTab:Header:crypto_name:Tezos:Sum:" type="Double" />
+                <Field name="TRON" source="CrossTab:Header:crypto_name:TRON:Sum:" type="Double" />
+                <Field name="UNUS_SED_LEO" source="CrossTab:Header:crypto_name:UNUS SED LEO:Sum:" type="Double" />
+                <Field name="USD_Coin" source="CrossTab:Header:crypto_name:USD Coin:Sum:" type="Double" />
+                <Field name="XRP" source="CrossTab:Header:crypto_name:XRP:Sum:" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="trade_date" order="Asc" />
+                <Field field="TradeDateDay" order="Asc" />
+                <Field field="TradeDayGroup" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+        <Node ToolID="112">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="3006" y="690" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="trade_date" />
+                <Field field="TradeDateDay" />
+                <Field field="TradeDayGroup" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="trade_date" />
+                <Field field="TradeDateDay" />
+                <Field field="TradeDayGroup" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_trade_date" selected="False" rename="Right_trade_date" input="Right_" />
+                    <SelectField field="Right_TradeDateDay" selected="False" rename="Right_TradeDateDay" input="Right_" />
+                    <SelectField field="Right_TradeDayGroup" selected="False" rename="Right_TradeDayGroup" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
         </Node>
       </ChildNodes>
     </Node>
@@ -209,7 +325,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_20020_eb45fef88688447eaa6786a1c2ea87a5_\Engine_14848_f1a4e5e8612c48a3a6e3cdd856f7bfed_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_7380_36dc1fa89f6b4f438cc8327fd07b2d29_\Engine_14848_3684c7d2d53e4c9a8f172930dca40874_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -814,7 +930,7 @@ TradeDayGroup = If [TradeDateDa...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_20020_eb45fef88688447eaa6786a1c2ea87a5_\Engine_14848_0f31540c70b84c0f9c84e0e7325eba10_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_7380_36dc1fa89f6b4f438cc8327fd07b2d29_\Engine_14848_74711d50ac7a4daca75c58462b706ec3_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -2238,12 +2354,28 @@ minable = If [...</DefaultAnnotationText>
       <Destination ToolID="106" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="105" Connection="Output" />
+      <Destination ToolID="110" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="106" Connection="Output" />
-      <Destination ToolID="107" Connection="Input" />
+      <Destination ToolID="112" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="111" Connection="Output" />
+      <Destination ToolID="112" Connection="Right" />
     </Connection>
     <Connection>
       <Origin ToolID="107" Connection="Output" />
       <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Output" />
+      <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="Join" />
+      <Destination ToolID="107" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="59" Connection="Output" />
