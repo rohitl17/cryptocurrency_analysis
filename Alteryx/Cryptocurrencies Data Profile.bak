@@ -1,9 +1,63 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="2021.3">
   <Nodes>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1446" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="trade_date" selected="True" />
+            <SelectField field="DailyLogReturn" selected="True" />
+            <SelectField field="Day Mean Price" selected="True" />
+            <SelectField field="TradedVolume" selected="True" />
+            <SelectField field="DailyReturns(%)" selected="True" />
+            <SelectField field="DailyLogVolChange" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1542" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_17448_7002611ebb6346899d6cd0d8a5ec27b7_\Engine_14848_0149c8945aba425f83f359066fd9c31f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
     <Node ToolID="83">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2309" y="89" width="235" height="133" />
+        <Position x="2417" y="89" width="235" height="133" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -21,7 +75,7 @@
       <ChildNodes>
         <Node ToolID="59">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="2334" y="138" />
+            <Position x="2442" y="138" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -40,11 +94,11 @@
         </Node>
         <Node ToolID="61">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="2430" y="138" />
+            <Position x="2538" y="138" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_12116_0159b52167e74b3c943ba3bd85d326fd_\Engine_18112_20f7f23a644c4ae7982688fc47599afe_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_17448_7002611ebb6346899d6cd0d8a5ec27b7_\Engine_14848_0a3436bb22394eec8ea89e44e3ed70a7_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -70,11 +124,11 @@
     </Node>
     <Node ToolID="72">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2561" y="269" width="456" height="165" />
+        <Position x="2669" y="269" width="456" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Caption>Volume Output</Caption>
+          <Caption>Log Volume Output</Caption>
           <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
           <Disabled value="False" />
           <Folded value="False" />
@@ -88,7 +142,7 @@
       <ChildNodes>
         <Node ToolID="68">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2586" y="318" />
+            <Position x="2694" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -108,7 +162,7 @@
         </Node>
         <Node ToolID="69">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="2682" y="318" />
+            <Position x="2790" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -159,7 +213,7 @@
         </Node>
         <Node ToolID="70">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2778" y="318" />
+            <Position x="2886" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -179,7 +233,7 @@
         </Node>
         <Node ToolID="71">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2886" y="318" />
+            <Position x="2994" y="318" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -207,7 +261,7 @@
     </Node>
     <Node ToolID="78">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2561" y="449" width="453" height="165" />
+        <Position x="2669" y="449" width="453" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -225,7 +279,7 @@
       <ChildNodes>
         <Node ToolID="74">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2586" y="498" />
+            <Position x="2694" y="498" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -245,7 +299,7 @@
         </Node>
         <Node ToolID="75">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="2682" y="498" />
+            <Position x="2790" y="498" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -253,7 +307,7 @@
                 <Field field="trade_date" />
               </GroupFields>
               <HeaderField field="crypto_name" />
-              <DataField field="DailyLogReturn" />
+              <DataField field="DailyReturns(%)" />
               <Methods>
                 <Method method="Sum" />
               </Methods>
@@ -296,7 +350,7 @@
         </Node>
         <Node ToolID="76">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2778" y="498" />
+            <Position x="2886" y="498" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -316,7 +370,7 @@
         </Node>
         <Node ToolID="77">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2886" y="498" />
+            <Position x="2994" y="498" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -342,9 +396,293 @@
         </Node>
       </ChildNodes>
     </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="3173" y="172" width="457" height="205" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Cross Correlation Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="88">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="3306" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="trade_date" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="trade_date" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_trade_date" selected="True" rename="Right_trade_date" input="Right_" />
+                    <SelectField field="Right_Binance_CoinVolume" selected="True" rename="Right_Binance_CoinVolume" input="Right_" />
+                    <SelectField field="Right_BitcoinVolume" selected="True" rename="Right_BitcoinVolume" input="Right_" />
+                    <SelectField field="Right_Bitcoin_CashVolume" selected="True" rename="Right_Bitcoin_CashVolume" input="Right_" />
+                    <SelectField field="Right_Bitcoin_SVVolume" selected="True" rename="Right_Bitcoin_SVVolume" input="Right_" />
+                    <SelectField field="Right_CardanoVolume" selected="True" rename="Right_CardanoVolume" input="Right_" />
+                    <SelectField field="Right_ChainlinkVolume" selected="True" rename="Right_ChainlinkVolume" input="Right_" />
+                    <SelectField field="Right_Crypto_com_CoinVolume" selected="True" rename="Right_Crypto_com_CoinVolume" input="Right_" />
+                    <SelectField field="Right_EOSVolume" selected="True" rename="Right_EOSVolume" input="Right_" />
+                    <SelectField field="Right_EthereumVolume" selected="True" rename="Right_EthereumVolume" input="Right_" />
+                    <SelectField field="Right_Huobi_TokenVolume" selected="True" rename="Right_Huobi_TokenVolume" input="Right_" />
+                    <SelectField field="Right_LitecoinVolume" selected="True" rename="Right_LitecoinVolume" input="Right_" />
+                    <SelectField field="Right_MoneroVolume" selected="True" rename="Right_MoneroVolume" input="Right_" />
+                    <SelectField field="Right_NEOVolume" selected="True" rename="Right_NEOVolume" input="Right_" />
+                    <SelectField field="Right_StellarVolume" selected="True" rename="Right_StellarVolume" input="Right_" />
+                    <SelectField field="Right_TetherVolume" selected="True" rename="Right_TetherVolume" input="Right_" />
+                    <SelectField field="Right_TezosVolume" selected="True" rename="Right_TezosVolume" input="Right_" />
+                    <SelectField field="Right_TRONVolume" selected="True" rename="Right_TRONVolume" input="Right_" />
+                    <SelectField field="Right_UNUS_SED_LEOVolume" selected="True" rename="Right_UNUS_SED_LEOVolume" input="Right_" />
+                    <SelectField field="Right_USD_CoinVolume" selected="True" rename="Right_USD_CoinVolume" input="Right_" />
+                    <SelectField field="Right_XRPVolume" selected="True" rename="Right_XRPVolume" input="Right_" />
+                    <SelectField field="Right_Binance_Coin" selected="True" rename="Right_Binance_Coin" input="Right_" />
+                    <SelectField field="Right_Bitcoin" selected="True" rename="Right_Bitcoin" input="Right_" />
+                    <SelectField field="Right_Bitcoin_Cash" selected="True" rename="Right_Bitcoin_Cash" input="Right_" />
+                    <SelectField field="Right_Bitcoin_SV" selected="True" rename="Right_Bitcoin_SV" input="Right_" />
+                    <SelectField field="Right_Cardano" selected="True" rename="Right_Cardano" input="Right_" />
+                    <SelectField field="Right_Chainlink" selected="True" rename="Right_Chainlink" input="Right_" />
+                    <SelectField field="Right_Crypto_com_Coin" selected="True" rename="Right_Crypto_com_Coin" input="Right_" />
+                    <SelectField field="Right_EOS" selected="True" rename="Right_EOS" input="Right_" />
+                    <SelectField field="Right_Ethereum" selected="True" rename="Right_Ethereum" input="Right_" />
+                    <SelectField field="Right_Huobi_Token" selected="True" rename="Right_Huobi_Token" input="Right_" />
+                    <SelectField field="Right_Litecoin" selected="True" rename="Right_Litecoin" input="Right_" />
+                    <SelectField field="Right_Monero" selected="True" rename="Right_Monero" input="Right_" />
+                    <SelectField field="Right_NEO" selected="True" rename="Right_NEO" input="Right_" />
+                    <SelectField field="Right_Stellar" selected="True" rename="Right_Stellar" input="Right_" />
+                    <SelectField field="Right_Tether" selected="True" rename="Right_Tether" input="Right_" />
+                    <SelectField field="Right_Tezos" selected="True" rename="Right_Tezos" input="Right_" />
+                    <SelectField field="Right_TRON" selected="True" rename="Right_TRON" input="Right_" />
+                    <SelectField field="Right_UNUS_SED_LEO" selected="True" rename="Right_UNUS_SED_LEO" input="Right_" />
+                    <SelectField field="Right_USD_Coin" selected="True" rename="Right_USD_Coin" input="Right_" />
+                    <SelectField field="Right_XRP" selected="True" rename="Right_XRP" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="89">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="3210" y="294" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Add</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Binance_Coin" />
+                <Field name="Bitcoin" />
+                <Field name="Bitcoin_Cash" />
+                <Field name="Bitcoin_SV" />
+                <Field name="Cardano" />
+                <Field name="Chainlink" />
+                <Field name="Crypto_com_Coin" />
+                <Field name="EOS" />
+                <Field name="Ethereum" />
+                <Field name="Huobi_Token" />
+                <Field name="Litecoin" />
+                <Field name="Monero" />
+                <Field name="NEO" />
+                <Field name="Stellar" />
+                <Field name="Tether" />
+                <Field name="Tezos" />
+                <Field name="TRON" />
+                <Field name="UNUS_SED_LEO" />
+                <Field name="USD_Coin" />
+                <Field name="XRP" />
+                <Field name="*Unknown" />
+                <Field name="trade_date" selected="False" />
+              </Fields>
+              <Expression />
+              <AddPrefixSuffix>
+                <Type>Suffix</Type>
+                <Text><![CDATA[ Return]]></Text>
+              </AddPrefixSuffix>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="trade_date" source="CrossTab:Group:Sum:" type="Date" />
+                <Field name="Binance_Coin Return" source="CrossTab:Header:crypto_name:Binance Coin:Sum:" type="Double" />
+                <Field name="Bitcoin Return" source="CrossTab:Header:crypto_name:Bitcoin:Sum:" type="Double" />
+                <Field name="Bitcoin_Cash Return" source="CrossTab:Header:crypto_name:Bitcoin Cash:Sum:" type="Double" />
+                <Field name="Bitcoin_SV Return" source="CrossTab:Header:crypto_name:Bitcoin SV:Sum:" type="Double" />
+                <Field name="Cardano Return" source="CrossTab:Header:crypto_name:Cardano:Sum:" type="Double" />
+                <Field name="Chainlink Return" source="CrossTab:Header:crypto_name:Chainlink:Sum:" type="Double" />
+                <Field name="Crypto_com_Coin Return" source="CrossTab:Header:crypto_name:Crypto.com Coin:Sum:" type="Double" />
+                <Field name="EOS Return" source="CrossTab:Header:crypto_name:EOS:Sum:" type="Double" />
+                <Field name="Ethereum Return" source="CrossTab:Header:crypto_name:Ethereum:Sum:" type="Double" />
+                <Field name="Huobi_Token Return" source="CrossTab:Header:crypto_name:Huobi Token:Sum:" type="Double" />
+                <Field name="Litecoin Return" source="CrossTab:Header:crypto_name:Litecoin:Sum:" type="Double" />
+                <Field name="Monero Return" source="CrossTab:Header:crypto_name:Monero:Sum:" type="Double" />
+                <Field name="NEO Return" source="CrossTab:Header:crypto_name:NEO:Sum:" type="Double" />
+                <Field name="Stellar Return" source="CrossTab:Header:crypto_name:Stellar:Sum:" type="Double" />
+                <Field name="Tether Return" source="CrossTab:Header:crypto_name:Tether:Sum:" type="Double" />
+                <Field name="Tezos Return" source="CrossTab:Header:crypto_name:Tezos:Sum:" type="Double" />
+                <Field name="TRON Return" source="CrossTab:Header:crypto_name:TRON:Sum:" type="Double" />
+                <Field name="UNUS_SED_LEO Return" source="CrossTab:Header:crypto_name:UNUS SED LEO:Sum:" type="Double" />
+                <Field name="USD_Coin Return" source="CrossTab:Header:crypto_name:USD Coin:Sum:" type="Double" />
+                <Field name="XRP Return" source="CrossTab:Header:crypto_name:XRP:Sum:" type="Double" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="trade_date" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="90">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="3390" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_trade_date" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="91">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="3198" y="221" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Add</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Binance_Coin" />
+                <Field name="Bitcoin" />
+                <Field name="Bitcoin_Cash" />
+                <Field name="Bitcoin_SV" />
+                <Field name="Cardano" />
+                <Field name="Chainlink" />
+                <Field name="Crypto_com_Coin" />
+                <Field name="EOS" />
+                <Field name="Ethereum" />
+                <Field name="Huobi_Token" />
+                <Field name="Litecoin" />
+                <Field name="Monero" />
+                <Field name="NEO" />
+                <Field name="Stellar" />
+                <Field name="Tether" />
+                <Field name="Tezos" />
+                <Field name="TRON" />
+                <Field name="UNUS_SED_LEO" />
+                <Field name="USD_Coin" />
+                <Field name="XRP" />
+                <Field name="*Unknown" />
+                <Field name="trade_date" selected="False" />
+              </Fields>
+              <Expression />
+              <AddPrefixSuffix>
+                <Type>Suffix</Type>
+                <Text><![CDATA[ Vol]]></Text>
+              </AddPrefixSuffix>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="trade_date" source="CrossTab:Group:Sum:" type="Date" />
+                <Field name="Binance_Coin Vol" source="CrossTab:Header:crypto_name:Binance Coin:Sum:" type="Int64" />
+                <Field name="Bitcoin Vol" source="CrossTab:Header:crypto_name:Bitcoin:Sum:" type="Int64" />
+                <Field name="Bitcoin_Cash Vol" source="CrossTab:Header:crypto_name:Bitcoin Cash:Sum:" type="Int64" />
+                <Field name="Bitcoin_SV Vol" source="CrossTab:Header:crypto_name:Bitcoin SV:Sum:" type="Int64" />
+                <Field name="Cardano Vol" source="CrossTab:Header:crypto_name:Cardano:Sum:" type="Int64" />
+                <Field name="Chainlink Vol" source="CrossTab:Header:crypto_name:Chainlink:Sum:" type="Int64" />
+                <Field name="Crypto_com_Coin Vol" source="CrossTab:Header:crypto_name:Crypto.com Coin:Sum:" type="Int64" />
+                <Field name="EOS Vol" source="CrossTab:Header:crypto_name:EOS:Sum:" type="Int64" />
+                <Field name="Ethereum Vol" source="CrossTab:Header:crypto_name:Ethereum:Sum:" type="Int64" />
+                <Field name="Huobi_Token Vol" source="CrossTab:Header:crypto_name:Huobi Token:Sum:" type="Int64" />
+                <Field name="Litecoin Vol" source="CrossTab:Header:crypto_name:Litecoin:Sum:" type="Int64" />
+                <Field name="Monero Vol" source="CrossTab:Header:crypto_name:Monero:Sum:" type="Int64" />
+                <Field name="NEO Vol" source="CrossTab:Header:crypto_name:NEO:Sum:" type="Int64" />
+                <Field name="Stellar Vol" source="CrossTab:Header:crypto_name:Stellar:Sum:" type="Int64" />
+                <Field name="Tether Vol" source="CrossTab:Header:crypto_name:Tether:Sum:" type="Int64" />
+                <Field name="Tezos Vol" source="CrossTab:Header:crypto_name:Tezos:Sum:" type="Int64" />
+                <Field name="TRON Vol" source="CrossTab:Header:crypto_name:TRON:Sum:" type="Int64" />
+                <Field name="UNUS_SED_LEO Vol" source="CrossTab:Header:crypto_name:UNUS SED LEO:Sum:" type="Int64" />
+                <Field name="USD_Coin Vol" source="CrossTab:Header:crypto_name:USD Coin:Sum:" type="Int64" />
+                <Field name="XRP Vol" source="CrossTab:Header:crypto_name:XRP:Sum:" type="Int64" />
+              </RecordInfo>
+              <SortInfo>
+                <Field field="trade_date" order="Asc" />
+              </SortInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="3498" y="222" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">G:\My Drive\MS Admission\Washington\GitHub\DataScienceProjects\cryptocurrency-analysis\CryptoCorrelationData.csv</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>CryptoCorrelationData.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
     <Node ToolID="82">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2069" y="89" width="221" height="133" />
+        <Position x="2189" y="89" width="221" height="133" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -362,7 +700,7 @@
       <ChildNodes>
         <Node ToolID="58">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="2094" y="138" />
+            <Position x="2214" y="138" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -381,11 +719,11 @@
         </Node>
         <Node ToolID="60">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="2190" y="138" />
+            <Position x="2310" y="138" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_12116_0159b52167e74b3c943ba3bd85d326fd_\Engine_18112_b3f6ba4909ea488ca9d0a4bd037f8928_.yxdb</TempFile>
+              <TempFile>C:\Users\Tharun\AppData\Local\Temp\Engine_17448_7002611ebb6346899d6cd0d8a5ec27b7_\Engine_14848_08cd05e7dc8b4cb7b31953b12e0cca42_.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -411,7 +749,7 @@
     </Node>
     <Node ToolID="67">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2561" y="89" width="457" height="165" />
+        <Position x="2669" y="89" width="457" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -429,7 +767,7 @@
       <ChildNodes>
         <Node ToolID="63">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2586" y="138" />
+            <Position x="2694" y="138" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -449,7 +787,7 @@
         </Node>
         <Node ToolID="64">
           <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-            <Position x="2682" y="138" />
+            <Position x="2790" y="138" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -500,7 +838,7 @@
         </Node>
         <Node ToolID="65">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2778" y="138" />
+            <Position x="2886" y="138" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -520,7 +858,7 @@
         </Node>
         <Node ToolID="66">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2886" y="138" />
+            <Position x="2994" y="138" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -548,7 +886,7 @@
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="2105" y="233" width="441" height="296" />
+        <Position x="2189" y="233" width="441" height="444" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -566,7 +904,7 @@
       <ChildNodes>
         <Node ToolID="52">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2418" y="294" />
+            <Position x="2502" y="294" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -592,7 +930,7 @@
         </Node>
         <Node ToolID="53">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2322" y="294" />
+            <Position x="2406" y="294" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -612,7 +950,7 @@
         </Node>
         <Node ToolID="55">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2130" y="282" />
+            <Position x="2214" y="282" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -635,7 +973,7 @@
         </Node>
         <Node ToolID="56">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="2226" y="294" />
+            <Position x="2310" y="294" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -666,7 +1004,7 @@
         </Node>
         <Node ToolID="57">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="2418" y="414" />
+            <Position x="2502" y="414" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -692,7 +1030,7 @@
         </Node>
         <Node ToolID="87">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="2322" y="414" />
+            <Position x="2406" y="414" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -710,11 +1048,121 @@
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
         </Node>
+        <Node ToolID="99">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2214" y="594" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="trade_date" selected="True" />
+                <SelectField field="crypto_name" selected="True" />
+                <SelectField field="TradedVolume" selected="True" />
+                <SelectField field="DailyReturns(%)" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="100">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2214" y="522" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Marketcap Rank" selected="False" />
+                <SelectField field="ticker" selected="False" />
+                <SelectField field="crypto_type" selected="False" />
+                <SelectField field="minable" selected="False" />
+                <SelectField field="Yearly_Return_USD" selected="False" />
+                <SelectField field="Yearly_TradedVolume" selected="False" />
+                <SelectField field="Avg_market_cap" selected="False" />
+                <SelectField field="Yearly_Return(%)" selected="False" />
+                <SelectField field="YearlyLogReturn" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="101">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="2310" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="crypto_name" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="crypto_name" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_crypto_name" selected="False" rename="Right_crypto_name" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="102">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2394" y="534" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="trade_date" selected="True" />
+                <SelectField field="crypto_name" selected="True" />
+                <SelectField field="DailyLogReturn" selected="True" />
+                <SelectField field="DailyLogVolChange" selected="True" />
+                <SelectField field="DailyReturns(%)" selected="True" />
+                <SelectField field="TradedVolume" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="1805" y="413" width="250" height="165" />
+        <Position x="1865" y="413" width="248" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -732,11 +1180,11 @@
       <ChildNodes>
         <Node ToolID="20">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-            <Position x="1926" y="462" />
+            <Position x="1986" y="462" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <File MaxRecords="" FileFormat="0">G:\My Drive\MS Admission\Washington\GitHub\DataScienceProjects\cryptocurrency-analysis\CryptoYearlyData.csv</File>
+              <File MaxRecords="" FileFormat="0">G:\My Drive\MS Admission\Washington\GitHub\DataScienceProjects\cryptocurrency-analysis\AllCryptoYearlyData.csv</File>
               <Passwords />
               <FormatSpecificOptions>
                 <LineEndStyle>CRLF</LineEndStyle>
@@ -750,7 +1198,7 @@
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText>CryptoYearlyData.csv</DefaultAnnotationText>
+              <DefaultAnnotationText>AllCryptoYearlyData.csv</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
@@ -758,7 +1206,7 @@
         </Node>
         <Node ToolID="51">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1830" y="462" />
+            <Position x="1890" y="462" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -780,7 +1228,7 @@
     </Node>
     <Node ToolID="86">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="1073" y="52" width="985" height="345" />
+        <Position x="1205" y="52" width="973" height="345" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -798,7 +1246,7 @@
       <ChildNodes>
         <Node ToolID="6">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="1098" y="101" />
+            <Position x="1230" y="101" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -824,7 +1272,7 @@
         </Node>
         <Node ToolID="13">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1974" y="102" />
+            <Position x="2094" y="102" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -849,7 +1297,7 @@
         </Node>
         <Node ToolID="35">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1302" y="102" />
+            <Position x="1422" y="101" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -866,7 +1314,7 @@
         </Node>
         <Node ToolID="41">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="1098" y="281" />
+            <Position x="1230" y="282" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -883,7 +1331,7 @@
         </Node>
         <Node ToolID="42">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1194" y="270" />
+            <Position x="1326" y="269" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -905,7 +1353,7 @@
         </Node>
         <Node ToolID="43">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-            <Position x="1398" y="101" />
+            <Position x="1518" y="102" />
           </GuiSettings>
           <Properties>
             <Configuration joinByRecordPos="False">
@@ -936,7 +1384,7 @@
         </Node>
         <Node ToolID="45">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1878" y="102" />
+            <Position x="1998" y="102" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -954,7 +1402,7 @@
         </Node>
         <Node ToolID="46">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1194" y="101" />
+            <Position x="1326" y="102" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -973,7 +1421,7 @@
         </Node>
         <Node ToolID="47">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1590" y="102" />
+            <Position x="1710" y="102" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -991,7 +1439,7 @@
         </Node>
         <Node ToolID="48">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-            <Position x="1782" y="101" />
+            <Position x="1902" y="101" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1009,7 +1457,7 @@
         </Node>
         <Node ToolID="49">
           <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-            <Position x="1686" y="102" />
+            <Position x="1806" y="102" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1029,13 +1477,13 @@
         </Node>
         <Node ToolID="50">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1470" y="101" />
+            <Position x="1614" y="102" />
           </GuiSettings>
           <Properties>
             <Configuration>
               <FormulaFields>
                 <FormulaField expression="[Yearly_Return_USD]*100/[price_usd]" field="Yearly_Return(%)" size="19.2" type="FixedDecimal" />
-                <FormulaField expression="LOG(([price_usd]+[Yearly_Return_USD])/[price_usd])" field="YearlyLogReturn" size="19.2" type="FixedDecimal" />
+                <FormulaField expression="LOG(([price_usd]+[Yearly_Return_USD])/[price_usd])" field="YearlyLogReturn" size="19.5" type="FixedDecimal" />
               </FormulaFields>
             </Configuration>
             <Annotation DisplayMode="0">
@@ -1051,7 +1499,7 @@ YearlyLogReturn = LOG(([p...</DefaultAnnotationText>
     </Node>
     <Node ToolID="85">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="233" y="77" width="188" height="240" />
+        <Position x="270" y="77" width="188" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1069,16 +1517,16 @@ YearlyLogReturn = LOG(([p...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="5">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="258" y="126" />
+            <Position x="295" y="126" />
           </GuiSettings>
           <Properties>
             <Configuration>
-              <Expression>[trade_date]&gt;='2019-11-01' and [trade_date]&lt;='2020-11-03' and [crypto_name]!=Null()</Expression>
+              <Expression>[crypto_name]!=Null()</Expression>
               <Mode>Custom</Mode>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
-              <DefaultAnnotationText>[trade_date]&gt;='2019-11-01' and [trade_date]&lt;='2020-11-03' and [crypto_name]!=Nul...</DefaultAnnotationText>
+              <DefaultAnnotationText>[crypto_name]!=Null()</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
@@ -1088,7 +1536,7 @@ YearlyLogReturn = LOG(([p...</DefaultAnnotationText>
     </Node>
     <Node ToolID="84">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="436" y="53" width="625" height="252" />
+        <Position x="473" y="53" width="721" height="252" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1106,7 +1554,7 @@ YearlyLogReturn = LOG(([p...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="9">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="461" y="114" />
+            <Position x="498" y="113" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1126,7 +1574,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="29">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="570" y="114" />
+            <Position x="607" y="114" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1152,7 +1600,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="30">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="786" y="114" />
+            <Position x="822" y="114" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1175,7 +1623,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="73">
           <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-            <Position x="678" y="114" />
+            <Position x="715" y="114" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1183,7 +1631,7 @@ Day Mean Price = (...</DefaultAnnotationText>
               <UpdateField_Name>trade_date</UpdateField_Name>
               <CreateField_Name>DailyLogReturn</CreateField_Name>
               <CreateField_Type>FixedDecimal</CreateField_Type>
-              <CreateField_Size>20.4</CreateField_Size>
+              <CreateField_Size>20.5</CreateField_Size>
               <OtherRows>Empty</OtherRows>
               <NumRows value="1" />
               <Expression>log([price_usd]/[Yesterday_Price])</Expression>
@@ -1201,7 +1649,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="79">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="894" y="114" />
+            <Position x="1014" y="114" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1218,7 +1666,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="14">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="978" y="102" />
+            <Position x="1110" y="102" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1240,11 +1688,37 @@ Day Mean Price = (...</DefaultAnnotationText>
           </Properties>
           <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
         </Node>
+        <Node ToolID="95">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+            <Position x="918" y="114" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UpdateField value="False" />
+              <UpdateField_Name>trade_date</UpdateField_Name>
+              <CreateField_Name>DailyLogVolChange</CreateField_Name>
+              <CreateField_Type>FixedDecimal</CreateField_Type>
+              <CreateField_Size>20.5</CreateField_Size>
+              <OtherRows>Empty</OtherRows>
+              <NumRows value="1" />
+              <Expression>log([TradedVolume]/[Row-1:TradedVolume])</Expression>
+              <GroupByFields>
+                <Field field="crypto_name" />
+              </GroupByFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>log([TradedVolume]/[Row-1:TradedVolume])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+        </Node>
       </ChildNodes>
     </Node>
     <Node ToolID="81">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="17" y="77" width="205" height="165" />
+        <Position x="54" y="77" width="205" height="165" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1262,7 +1736,7 @@ Day Mean Price = (...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="1">
           <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-            <Position x="42" y="126" />
+            <Position x="79" y="126" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1312,7 +1786,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="2">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="138" y="126" />
+            <Position x="175" y="126" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1344,7 +1818,7 @@ Day Mean Price = (...</DefaultAnnotationText>
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
-        <Position x="366" y="438" width="157" height="24" />
+        <Position x="403" y="440" width="157" height="24" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1362,7 +1836,7 @@ Day Mean Price = (...</DefaultAnnotationText>
       <ChildNodes>
         <Node ToolID="11">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="510" y="582" />
+            <Position x="547" y="584" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1393,7 +1867,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="12">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="618" y="570" />
+            <Position x="655" y="572" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1414,7 +1888,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="15">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-            <Position x="1194" y="510" />
+            <Position x="1231" y="512" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1432,7 +1906,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="16">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1482" y="510" />
+            <Position x="1566" y="510" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1460,7 +1934,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="17">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
-            <Position x="1290" y="510" />
+            <Position x="1327" y="512" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1478,7 +1952,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="18">
           <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-            <Position x="1386" y="510" />
+            <Position x="1423" y="512" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1498,7 +1972,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="21">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="390" y="498" />
+            <Position x="427" y="500" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1516,7 +1990,7 @@ Day Mean Price = (...</DefaultAnnotationText>
         </Node>
         <Node ToolID="22">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="714" y="486" />
+            <Position x="751" y="488" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1537,7 +2011,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="23">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="906" y="486" />
+            <Position x="943" y="488" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1556,7 +2030,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="24">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-            <Position x="1002" y="630" />
+            <Position x="1039" y="632" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1575,7 +2049,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="25">
           <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-            <Position x="1098" y="630" />
+            <Position x="1135" y="632" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1594,7 +2068,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="26">
           <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-            <Position x="1194" y="630" />
+            <Position x="1231" y="632" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1620,7 +2094,7 @@ minable = If [...</DefaultAnnotationText>
         </Node>
         <Node ToolID="27">
           <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-            <Position x="810" y="498" />
+            <Position x="847" y="500" />
           </GuiSettings>
           <Properties>
             <Configuration>
@@ -1664,6 +2138,10 @@ minable = If [...</DefaultAnnotationText>
   </Nodes>
   <Connections>
     <Connection>
+      <Origin ToolID="103" Connection="Output" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="59" Connection="Output" />
       <Destination ToolID="61" Connection="Input" />
     </Connection>
@@ -1680,6 +2158,10 @@ minable = If [...</DefaultAnnotationText>
       <Destination ToolID="71" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="91" Connection="Targets" />
+    </Connection>
+    <Connection>
       <Origin ToolID="74" Connection="Output" />
       <Destination ToolID="75" Connection="Input" />
     </Connection>
@@ -1690,6 +2172,26 @@ minable = If [...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="76" Connection="Output" />
       <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="76" Connection="Output" />
+      <Destination ToolID="89" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Join" />
+      <Destination ToolID="90" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Output" />
+      <Destination ToolID="88" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="88" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="90" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="58" Connection="Output" />
@@ -1711,23 +2213,11 @@ minable = If [...</DefaultAnnotationText>
       <Origin ToolID="53" Connection="Output" />
       <Destination ToolID="52" Connection="Input" />
     </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="53" Connection="Output" />
-      <Destination ToolID="63" Connection="Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="53" Connection="Output" />
-      <Destination ToolID="68" Connection="Input" />
-    </Connection>
-    <Connection Wireless="True">
-      <Origin ToolID="53" Connection="Output" />
-      <Destination ToolID="74" Connection="Input" />
-    </Connection>
     <Connection>
       <Origin ToolID="55" Connection="Output" />
       <Destination ToolID="56" Connection="Left" />
     </Connection>
-    <Connection Wireless="True">
+    <Connection>
       <Origin ToolID="14" Connection="Output" />
       <Destination ToolID="56" Connection="Right" />
     </Connection>
@@ -1740,6 +2230,30 @@ minable = If [...</DefaultAnnotationText>
       <Destination ToolID="57" Connection="Input" />
     </Connection>
     <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="101" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="101" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Join" />
+      <Destination ToolID="102" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="102" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="102" Connection="Output" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="102" Connection="Output" />
+      <Destination ToolID="74" Connection="Input" />
+    </Connection>
+    <Connection>
       <Origin ToolID="51" Connection="Output" />
       <Destination ToolID="20" Connection="Input" />
     </Connection>
@@ -1747,7 +2261,7 @@ minable = If [...</DefaultAnnotationText>
       <Origin ToolID="6" Connection="Output" />
       <Destination ToolID="46" Connection="Input" />
     </Connection>
-    <Connection Wireless="True">
+    <Connection>
       <Origin ToolID="13" Connection="Output" />
       <Destination ToolID="55" Connection="Input" />
     </Connection>
@@ -1762,6 +2276,10 @@ minable = If [...</DefaultAnnotationText>
     <Connection Wireless="True">
       <Origin ToolID="13" Connection="Output" />
       <Destination ToolID="87" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="35" Connection="True" />
@@ -1825,7 +2343,7 @@ minable = If [...</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="30" Connection="Output" />
-      <Destination ToolID="79" Connection="Input" />
+      <Destination ToolID="95" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="73" Connection="Output" />
@@ -1842,6 +2360,18 @@ minable = If [...</DefaultAnnotationText>
     <Connection>
       <Origin ToolID="14" Connection="Output" />
       <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="95" Connection="Output" />
+      <Destination ToolID="99" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="1" Connection="Output" />
