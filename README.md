@@ -29,10 +29,10 @@ The dataset used for this analysis is “Historical data on the trading of crypt
 
 ### Results & Inferences
 We started our work by understanding cryptocurrencies, analyzing data, and doing market research about the sentiments. Our goal was to help an investor devise an informed strategy using statistical evidence. Our test results in the above section and the conclusions drawn from them are summarized as follows:
-• From Test 1, we have evidence for suggesting an investor invest in tokens over coins as they give higher yearly log returns.
-• If the investor still wants to invest in coins because of their market coverage or whatever reasons, we  have evidence of suggesting the investor invest in minable coins over non-minable coins as they show higher yearly log returns in test 2.
-• For the Monday market sentiment, we can conclude that trading cryptocurrencies have no statistical  significance for favoring Mondays. 
-• From the correlation tests, we found that overall next-day volume has a slight negative correlation with  the previous-day return. An additional finding includes that it might be a good idea to invest in Bitcoin Cash and have special attention to the volume nine days ago.
+1. From Test 1, we have evidence for suggesting an investor invest in tokens over coins as they give higher yearly log returns.
+2. If the investor still wants to invest in coins because of their market coverage or whatever reasons, we  have evidence of suggesting the investor invest in minable coins over non-minable coins as they show higher yearly log returns in test 2.
+3. For the Monday market sentiment, we can conclude that trading cryptocurrencies have no statistical significance for favoring Mondays. 
+4. From the correlation tests, we found that overall next-day volume has a slight negative correlation with  the previous-day return. An additional finding includes that it might be a good idea to invest in Bitcoin Cash and have special attention to the volume nine days ago.
 
 A couple of challenges faced throughout the process included dealing with real-world datasets which required transformations and manipulation. Figuring out the right tests and respective strategies to avoid misinterpretation of statistical results was a challenge as well. We also learned the appropriate way of applying statistical tests to this time series data keeping in mind that the assumptions are fulfilled. 
 
