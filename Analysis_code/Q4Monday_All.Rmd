@@ -1,0 +1,34 @@
+---
+title: "Untitled"
+author: "Nayantara Mohan"
+date: "3/9/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(lubridate)
+dfall<-read.csv("/Users/nayantara/Desktop/UW/Winter\ 2022/DATA\ 557\ Applied\ Statistics/Project/cryptocurrency-analysis-main/CryptoMondayAnalysisData_ALL.csv", header = TRUE, sep =",")
+```
+
+```{r}
+#Avg Daily Returns b/w Monday and Sunday
+monday<- (dfall[dfall$TradeDayGroup == 'Monday',])$Avg_DailyLogReturn
+other<- (dfall[dfall$TradeDayGroup == 'Other',])$Avg_DailyLogReturn
+t_test = t.test(monday, other, var.equal = T, alternative = "greater")
+t_test
+
+```
+
+```{r}
+qqnorm(monday)
+qqline(monday)
+```
+
+```{r}
+qqnorm(other)
+qqline(other)
+```

@@ -1,0 +1,72 @@
+---
+title: "Project"
+author: "Nayantara Mohan"
+date: "3/5/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(lubridate)
+df<-read.csv("/Users/nayantara/Desktop/UW/Winter\ 2022/DATA\ 557\ Applied\ Statistics/Project/cryptocurrency-analysis-main/CryptoMondayAnalysisData_Updated.csv", header = TRUE, sep =",")
+
+```
+
+```{r}
+df
+```
+
+```{r}
+#Avg Daily Returns b/w Monday and Other Days
+monday<- (df[df$TradeDayGroup == 'Monday',])$Avg_DailyLogReturn
+other<- (df[df$TradeDayGroup == 'Other',])$Avg_DailyLogReturn
+t_test = t.test(monday, other, var.equal = T, alternative = "greater")
+t_test
+```
+
+```{r}
+var(other)
+```
+
+```{r}
+hist(monday, main ="Spread of Avg Daily Log Returns on Monday", col=rgb(0.2,0.4,0.6,0.6), xlab = "returns")
+
+```
+
+```{r}
+hist(other, main ="Spread of Avg Daily Log Returns on Other Days", col=rgb(0.2,0.4,0.6,0.6), xlab = "returns")
+```
+
+```{r}
+NROW(other)
+```
+
+```{r}
+mean(monday)
+```
+
+```{r}
+mean(other)
+```
+
+```{r}
+library(ggplot2)
+dp <- ggplot(df, aes(x=TradeDayGroup, y=Avg_DailyLogReturn, fill=TradeDayGroup)) + 
+  geom_violin(trim=FALSE)+
+  geom_boxplot(width=0.1, fill="white")+
+  labs(title="Plot of average daily log returns by days of the week",x="Day", y = "Average Daily Log Return")
+dp + theme_classic()
+```
+
+```{r}
+qqnorm(monday, main="Average Daily Log Returns for Monday")
+qqline(monday)
+```
+
+```{r}
+qqnorm(other, main="Average Daily Log Returns for Other Days")
+qqline(other)
+```

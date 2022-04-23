@@ -1,0 +1,106 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r}
+df<-read.csv('../AllCryptoYearlyData.csv')
+
+df<-na.omit(df)
+#df<-head(df, 20)
+```
+
+```{r}
+#Average log yearly returns of tokens is greater than coins for the year 2019-2020
+coins_sample <- df[df$crypto_type=='Coin',]
+tokens_sample <- df[df$crypto_type=='Token',]
+
+print (paste(mean(coins_sample$YearlyLogReturn), mean(tokens_sample$YearlyLogReturn)))
+print(paste(var(coins_sample$YearlyLogReturn), var(tokens_sample$YearlyLogReturn)))
+
+t.test(coins_sample$YearlyLogReturn, tokens_sample$YearlyLogReturn, var.equal=TRUE, alternative='less' )
+```
+```{r}
+library(pwr)
+pwr.t2n.test(n1 = 13, n2= 7, d = 0.8, sig.level = 0.05, power = NULL,
+ alternative = "less")
+```
+
+```{r}
+#Average log yearly returns of non-minable is greater than minable for the year 2019-2020
+
+coins_sample <- df[df$crypto_type=='Coin',]
+
+minable <- coins_sample[coins_sample$minable=='Yes',]
+non_minable <- coins_sample[coins_sample$minable=='No',]
+
+print (paste(mean(minable$YearlyLogReturn), mean(non_minable$YearlyLogReturn)))
+print(paste(var(minable$YearlyLogReturn), var(non_minable$YearlyLogReturn)))
+
+t.test(minable$YearlyLogReturn, non_minable$YearlyLogReturn, var.equal=TRUE, alternative='greater' )
+print (minable)
+```
+
+
+```{r}
+hist(coins_sample$YearlyLogReturn,col = 'skyblue3', main="Yearly Log Returns distribution for Coins",
+        xlab="Yearly Log Return",
+        ylab="Count")
+```
+
+
+```{r}
+hist(tokens_sample$YearlyLogReturn,col = 'skyblue3', main="Yearly Log Returns distribution for Tokens",
+        xlab="Yearly Log Return",
+        ylab="Count")
+```
+
+```{r}
+all_samples <- list(coins_sample$YearlyLogReturn, tokens_sample$YearlyLogReturn)
+
+boxplot(all_samples, range=0.0, horizontal=FALSE, varwidth=TRUE, notch=FALSE,
+        outline=TRUE, names=c("Coins","Tokens"), 
+        border=c("blue","blue"), col=c("white","white"),
+        xlab = "Sample Type", ylab = "Yearly Log Return")
+
+```
+
+```{r}
+hist(minable$YearlyLogReturn,col = 'skyblue3', main="Yearly log returns distribution for minable coins",
+        xlab="Yearly Log Return",
+        ylab="Count")
+```
+
+```{r}
+hist(non_minable$YearlyLogReturn,col = 'skyblue3', main="Yearly log returns distribution for non-minable coins",
+        xlab="Yearly Log Return",
+        ylab="Count")
+```
+
+```{r}
+all_samples <- list(minable$YearlyLogReturn, non_minable$YearlyLogReturn)
+
+boxplot(all_samples, range=0.0, horizontal=FALSE, varwidth=TRUE, notch=FALSE,
+        outline=TRUE, names=c("Minable coins","Non-minable coins"), 
+        border=c("blue","blue"), col=c("white","white"),
+        xlab = "Sample Type", ylab = "Yearly Log Return")
+
+```
+
+```{r}
+library(ggplot2)
+dp <- ggplot(coins_sample, aes(x=minable, y=YearlyLogReturn, fill=minable)) + 
+  geom_violin(trim=FALSE)+
+  geom_boxplot(width=0.1, fill="white")+
+  labs(title="Plot of yearly log returns by type of coins",x="Type of coins (Minable)", y = "Yearly Log Return")
+dp + theme_classic()
+```
+
+```{r}
+library(ggplot2)
+dp <- ggplot(df, aes(x=crypto_type, y=YearlyLogReturn, fill=crypto_type)) + 
+  geom_violin(trim=FALSE)+
+  geom_boxplot(width=0.1, fill="white")+
+  labs(title="Plot of yearly log returns by cryptocurrency type",x="Type of cryptocurrency", y = "Yearly Log Return")
+dp + theme_classic()
+```
