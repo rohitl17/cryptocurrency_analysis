@@ -20,11 +20,9 @@ The analysis was performed on the historical data of cryptocurrency returns and 
 After the background research, we finalized the below questions which we analyzed in detail 
 
 1. Do coins and tokens have the same average yearly returns?
-2. 2. Do mineable and non-mineable coins have the same average yearly returns?
-3. 3. Are Mondays more favorable for trading cryptocurrencies?
-4. 4. Is there a cross-correlation (or lagged correlation) between traded volume and returns in the 
-cryptocurrencies?
+2. Do mineable and non-mineable coins have the same average yearly returns?
+3. Are Mondays more favorable for trading cryptocurrencies?
+4. Is there a cross-correlation (or lagged correlation) between traded volume and returns in the cryptocurrencies?
 
 ### Dataset 
-The dataset used for this analysis is “Historical data on the trading of cryptocurrencies”
-. The dataset contains daily trading data for 4137 crypto coins and tokens. It has a total of 5 years of data from Dec 2015 to Nov 2020 with 2.4M records. The data is collected from multiple cryptocurrency trading platforms. As stated in the above section, the current analysis is limited to the most recent 1-year period i.e., November 2019 to November 2020. Each record in the dataset has the attributes - Trade Date,  Volume, Price USD, Market cap, Capitalization Change 1day, USD Price change 1day, Crypto Name, Crypto Type, Ticker, Max Supply, Site URL, GitHub URL, Mineable, Platform Name, and Industry Name. Along with  these, we derive a few aggregate fields for better statistical analysis which are further discussed in each hypothesis test.
+The dataset used for this analysis is “Historical data on the trading of cryptocurrencies”. The dataset contains daily trading data for 4137 crypto coins and tokens. It has a total of 5 years of data from Dec 2015 to Nov 2020 with 2.4M records. The data is collected from multiple cryptocurrency trading platforms. As stated in the above section, the current analysis is limited to the most recent 1-year period i.e., November 2019 to November 2020. Each record in the dataset has the attributes - Trade Date,  Volume, Price USD, Market cap, Capitalization Change 1day, USD Price change 1day, Crypto Name, Crypto Type, Ticker, Max Supply, Site URL, GitHub URL, Mineable, Platform Name, and Industry Name. Along with  these, we derive a few aggregate fields for better statistical analysis which are further discussed in each hypothesis test.
